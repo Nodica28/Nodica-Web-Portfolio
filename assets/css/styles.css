@@ -804,7 +804,7 @@ img {
 
 .project__bg {
   background-color: var(--first-color);
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 .project__title {
@@ -827,10 +827,6 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
-.contact__container {
-  display: flex;
-}
-
 .contact__information {
   display: flex;
   margin-bottom: var(--mb-2);
@@ -972,6 +968,9 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
+  .contact__container {
+    display: block;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1011,6 +1010,9 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  .contact__container {
+    display: block;
+  }
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1037,6 +1039,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .contact__container {
+    display: flex;
+    justify-content: space-between;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
