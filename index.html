@@ -156,7 +156,19 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My Introduction</span>
         <div class="about__container container grid">
-          <img src="assets/img/aboutme.jpg" alt="" class="about__img" />
+          <div class="about__section">
+            <img src="assets/img/aboutme.jpg" alt="" class="about__img" />
+            <div class="about__buttons">
+              <a
+                download="Nicdao-Justine_Resume.pdf"
+                href="assets/pdf/Nicdao-Justine_Resume.pdf"
+                class="button button--flex"
+                target="_blank"
+              >
+                Download CV<i class="uil uil-import button__icon"></i>
+              </a>
+            </div>
+          </div>
           <div class="about__data">
             <p class="about__description">
               Hello, I'm Justine, a Full Stack Software Engineer specializing in
@@ -182,16 +194,6 @@
                 <span class="about__info-name">Web <br />frameworks</span>
               </div>
             </div>
-            <div class="about__buttons">
-              <a
-                download="Nicdao-Justine_Resume.pdf"
-                href="assets/pdf/Nicdao-Justine_Resume.pdf"
-                class="button button--flex"
-                target="_blank"
-              >
-                Download CV<i class="uil uil-import button__icon"></i>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -207,14 +209,14 @@
               <div class="skills__header">
                 <i class="uil uil-brackets-curly skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Frontend Developer</h1>
+                  <h1 class="skills__title">Frontend</h1>
                   <span class="skills__subtitle">More than 2 years</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/html_icon.svg"
                       alt="html"
@@ -224,7 +226,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/css_icon.svg"
                       alt="css"
@@ -234,7 +236,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/tailwind_icon.svg"
                       alt="tailwind"
@@ -244,7 +246,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/material_icon.svg"
                       alt="materialUI"
@@ -254,7 +256,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/java_icon.svg"
                       alt="java"
@@ -264,7 +266,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/javascript_icon.svg"
                       alt="javaScript"
@@ -274,7 +276,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/react_icon.svg"
                       alt="reactJS"
@@ -284,7 +286,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/next_icon.svg"
                       alt="nextJS"
@@ -300,14 +302,14 @@
               <div class="skills__header">
                 <i class="uil uil-code-branch skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Backend Developer</h1>
+                  <h1 class="skills__title">Backend</h1>
                   <span class="skills__subtitle">More than 2 years</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/node_icon.svg"
                       alt="nodejs"
@@ -317,7 +319,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/express_icon.svg"
                       alt="expressJS"
@@ -327,7 +329,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/mongodb_icon.svg"
                       alt="mongoDB"
@@ -337,7 +339,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/javascript_icon.svg"
                       alt="javaScript"
@@ -359,7 +361,7 @@
               </div>
               <div class="skills__list grid">
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/git_icon.svg"
                       alt="git"
@@ -369,7 +371,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/github_icon.svg"
                       alt="gitHub"
@@ -379,7 +381,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/gitlab_icon.svg"
                       alt="gitLab"
@@ -389,7 +391,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/post_man.svg"
                       alt="postman"
@@ -399,7 +401,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/vscode_icon.svg"
                       alt="vscode"
@@ -409,7 +411,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/sourcetree_icon.svg"
                       alt="sourcetree"
@@ -419,7 +421,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/jira_icon.svg"
                       alt="jira"
@@ -429,7 +431,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/trello_icon.svg"
                       alt="trello"
@@ -439,7 +441,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/photoshop_icon.svg"
                       alt="photoshop"
@@ -449,7 +451,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/premiere_icon.svg"
                       alt="premiere"
@@ -459,7 +461,7 @@
                   </div>
                 </div>
                 <div class="skills__data">
-                  <div class="skills__title">
+                  <div class="skills__tech">
                     <img
                       src="assets/icons/ae_icon.svg"
                       alt="after effects"
@@ -647,7 +649,7 @@
             </span>
             <div class="services__modal">
               <div class="services__modal-content">
-                <h4 class="services__modal-title">Frontend <br />Developer</h4>
+                <h4 class="services__modal-title">Frontend Developer</h4>
                 <i class="uil uil-times-circle services__modal-close"></i>
 
                 <ul class="services__modal-services grid">
@@ -686,7 +688,7 @@
             </span>
             <div class="services__modal">
               <div class="services__modal-content">
-                <h4 class="services__modal-title">Backend <br />Developer</h4>
+                <h4 class="services__modal-title">Backend Developer</h4>
                 <i class="uil uil-times-circle services__modal-close"></i>
 
                 <ul class="services__modal-services grid">

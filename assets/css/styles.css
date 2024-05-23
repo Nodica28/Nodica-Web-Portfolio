@@ -414,6 +414,13 @@ img {
   align-self: center;
 }
 
+.about__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-2-5);
+  align-items: center;
+}
+
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
@@ -474,6 +481,10 @@ img {
 }
 
 .skills__title {
+  font-size: var(--h3-font-size);
+}
+
+.skills__tech {
   text-align: center;
   font-size: var(--h3-font-size);
 }
