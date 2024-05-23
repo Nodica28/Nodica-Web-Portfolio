@@ -465,8 +465,12 @@ img {
 .skills__icon {
   margin-right: var(--mb-0-75);
 }
+.skills__svg {
+  height: 30px;
+}
 
 .skills__title {
+  text-align: center;
   font-size: var(--h3-font-size);
 }
 
@@ -481,18 +485,17 @@ img {
 }
 
 .skills__list {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   row-gap: 1.5rem;
-  padding-left: 2.7rem;
+  padding-inline: 2.7rem;
 }
 
 .skills__title {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: var(--mb-0-5);
 }
 
 .skills__name {
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
 
