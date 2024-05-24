@@ -14,6 +14,7 @@
   --first-color: hsl(0, 69%, 66%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-third: hsl(var(--hue-color-red), 30%, 40%);
+  --first-color-fourth: hsl(var(--hue-color-red), 70%, 85%);
   --first-color-alt: hsl(var(--hue-color), 50%, 80%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -316,13 +317,14 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
+  margin-bottom: var(--mb-1-5);
 }
 
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-1-5);
 }
 
 .home__description {
@@ -769,6 +771,7 @@ img {
   width: 100%;
   border-radius: 0.5rem;
   justify-self: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio__title {
@@ -777,6 +780,15 @@ img {
 }
 
 .portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__tags {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  height: max-content;
+  width: 100%;
+  text-align: left;
   margin-bottom: var(--mb-0-75);
 }
 
@@ -895,7 +907,7 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  background-color: var(--first-color);
   padding: 2rem 0 3rem;
 }
 
@@ -928,6 +940,7 @@ img {
 }
 
 .footer__copy {
+  color: #fff;
   font-size: var(--smaller-font-size);
   text-align: center;
   columns: var(--text-color-light);
@@ -946,7 +959,7 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background-color: var(--first-color-third);
   opacity: 0.8;
   padding: 0 0.3rem;
   border-radius: 0.4rem;
@@ -955,7 +968,7 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-fourth);
 }
 
 .scrollup__icon {
@@ -1166,7 +1179,7 @@ img {
   }
 
   .portfolio__img {
-    width: 320px;
+    width: 450px;
   }
   .portfolio__content {
     align-items: center;
@@ -1184,6 +1197,7 @@ img {
     padding: 3rem 2.5rem;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
+    align-items: center;
   }
   .project__data {
     padding-top: 0.8rem;
